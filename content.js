@@ -56,7 +56,7 @@ function getData(query_array, counter, paper) {
           var linkText = document.createTextNode('Bibtex');
           a.appendChild(linkText);
           a.title = 'Bibtex';
-          a.href = 'http://doi2bib.org/bib/' + doi;
+          a.href = 'https://doi2bib.org/bib/' + doi;
           footer.appendChild(a);
 
           counter++;
