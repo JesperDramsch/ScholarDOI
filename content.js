@@ -7,7 +7,7 @@ for (var i = 0, l = paper.length; i < l; i++) {
   var cur_paper = paper[i];
   var query = 'https://api.crossref.org/works?rows=5&query.title='
 
-  var title = cur_paper.getElementsByClassName('gs_rt')[0].getElementsByTagName('a')[0].text;
+  var title = cur_paper.getElementsByClassName('gs_rt')[0].lastChild.text;
 
   query += title;
   query += '&query.author=';
